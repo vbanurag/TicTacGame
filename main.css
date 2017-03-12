@@ -1,0 +1,111 @@
+body{
+  overflow: hidden;
+}
+
+#first, #second, #third, #fourth, #five,#sixth,#seven,#eight,#nine{
+
+    border: 2px solid;
+     margin-right: 77px; 
+     margin-right: 77px; 
+    height: 90px;
+    width: 120px;
+    display: table-cell;
+    border-color: cornflowerblue;
+
+}
+.game{
+  display: table;
+  text-align: center;
+  margin: 0px auto;
+}
+#first{
+  border-left: none;
+  border-top: none;
+  height: 90px;
+}
+#second{
+  border-top: none;
+}
+#third{
+  border-top: none;
+  border-right: none;
+}
+#fourth{
+  border-left: none;
+}
+#sixth{
+  border-right: none;
+}
+#seven{
+  border-left: none;
+  border-bottom: none;
+}
+#eight{
+  border-bottom: none;
+}
+#nine{
+  border-bottom: none;
+  border-right: none;
+}
+
+.tile{
+  padding:0px;
+  height:100px;
+  
+  border: 2px solid;
+  display: inline;
+  vertical-align:center;
+}
+.fa-times{
+  color: blue;
+} 
+.fa-circle-o{
+  color: green;
+}
+.playerSetArrange{
+  padding:0px;
+  height:100px;
+  width :100px;
+  display: inline-block;
+  position: relative;
+}
+.gameWrapper{
+  width: 70%;
+  float: right;
+  overflow: hidden;
+}
+.statWrapper{
+  width:25%;
+  overflow: hidden;
+  display: inline-block;
+}
+.startGame {
+    width: 100%;
+    margin: 0px auto;
+    padding: 10px;
+    overflow: hidden;
+    display: none;
+}
+.gameControls{
+  margin: 0px auto;
+  text-align: -webkit-center;
+  margin-top: 20%;
+}
+.header{
+    color: blanchedalmond;
+    background-color: darkseagreen;
+    height: 38px;
+    font-size: x-large;
+    font-weight: 800;
+}
+.footer{
+    background-color: darkseagreen;
+    height: 29px;
+    margin-top: auto;
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+}
+.gameReset{
+  display: none;
+}

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Tic tac</title>
+  <link rel="stylesheet" type="text/css" href="main.css">
+  <script type="text/javascript" src="game.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div class='header'> Tic Tac game</div>
+ 
+<div class='gameControls'>
+    <button type="button" class="btn btn-success" id='play' onclick="play()">Play</button>
+    <button type="button" class="btn btn-warning" id='reset' onclick="reset()">Reset</button>
+</div>
+
+<div class="startGame" id="gamePoint">
+<div class="statWrapper">
+<div class="player">
+  <h4>Choose Sign For player 1</h4>
+  <button id ="x" onclick="setPlayer(this.id)">  <span class="fa fa-times fa-4x"></span></button>
+  <button id ="o" onclick="setPlayer(this.id)"> <span class="fa fa-circle-o fa-4x"></span></button>
+</div>
+
+<div class="playerSet">
+    <label>Total Game : </label><p id='totalGame'></p>
+  <div id='player1' class="playerSetArrange">
+    <h3>Player 1:</h3>
+    <p id ="p1"></p>
+    <label>Won : </label><p id='Win1'></p>
+    <label>Lose : </label><p id ='Lose1'></p>
+  </div>
+  
+  <div id ='player2' class="playerSetArrange">
+    <h3>Player 2:</h3>
+    <p id ="p2"></p>
+    <label>Won : </label><p id='Win2'></p>
+    <label>Lose : </label><p id ='Lose2'></p>
+  </div>
+</div>
+</div>
+
+
+
+
+<div class="gameWrapper">
+      <div>
+        <h3>Game Area</h3>
+      </div>
+        <div class="game"> 
+            <div class="row1">
+              <div id="first" class = "tile" onclick="icon(this.id)"></div>
+              <div id="second" class = "tile" onclick="icon(this.id)"></div>
+              <div id="third" class = "tile" onclick="icon(this.id)"></div>
+            </div>
+          <div class="row2">
+              <div id="fourth" class = "tile" onclick="icon(this.id)"></div>
+              <div id="five" class = "tile" onclick="icon(this.id)"></div>
+              <div id="sixth" class = "tile" onclick="icon(this.id)"></div>
+          </div>
+          <div class="row3">
+              <div id="seven" class = "tile" onclick="icon(this.id)"></div>
+              <div id="eight" class = "tile" onclick="icon(this.id)"></div>
+              <div id="nine" class = "tile" onclick="icon(this.id)"></div>
+          </div>
+
+        </div>
+</div>
+</div>
+<div>
+  <p id="result"></p>
+</div>
+<div class='gameReset'>
+    <button type="button" class="btn btn-warning" id='reset' onclick="reset()">Reset</button>
+</div>
+<div class='footer'> Anurag Sharma </div>
+</body>
+</html>
